@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #16031a;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1,h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  h4{
+    color: rgb(249, 48, 81);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+  }
+  
+  label i {
+    margin-right: 10px;
+    color: #e74c3c;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="color"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="text"]{
+    width: 95%;
+}
+  
+  .colorPicker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .colorPreview {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+  }
+  
+  .valueBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ledDisplay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    font-family: Consolas;
+  }
+  
+  .scrollingText {
+    font-weight: bolder;
+    white-space: nowrap;
+    position: absolute;
+    animation: scrollText linear infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.7), 
+                 0 0 40px rgba(255, 255, 255, 0.6);
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; 
+      margin-bottom: 5px;
+    }
+  
+    .input-group {
+      margin-bottom: 12px;
+    }
+
+    input[type="number"],
+    input[type="color"] {
+      padding: 10px;
+    }
+
+    input[type="text"]{
+        padding: 10px;
+        width: 95%;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .ledDisplay {
+      height: 80px;
+      font-size: 14px; 
+    }
+  
+    .scrollingText {
+      font-size: 1.2rem; 
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 
+                   0 0 10px rgba(255, 255, 255, 0.7), 
+                   0 0 20px rgba(255, 255, 255, 0.6); 
+    }
+  }
