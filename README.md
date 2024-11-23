@@ -11,11 +11,6 @@ Welcome to the **Scrolling LED Text Web App**! 🎉 This project is a fun and in
 - **Text Glow and Border Effects**: Add glowing effects ✨ and customizable borders around the text. 🌈
 - **Responsive Design**: The app is fully responsive, ensuring it looks great on all screen sizes, including mobile devices 📱.
 
-## Demo 📸
-
-![Demo Image](images/ss.png)  
-*Click to see the app in action.* 🚀
-
 ## Technologies Used 💻
 
 - **HTML5**: Structure and markup. 🏗️
